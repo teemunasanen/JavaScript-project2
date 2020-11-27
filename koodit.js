@@ -111,7 +111,7 @@ function showMovies() {
       var showPortrait = xmlDocMagic.getElementsByTagName("EventSmallImagePortrait");
 
       //var for result output and table specs
-      var out = "<table class='table table-striped table-dark'>";
+      var out = "<div class='table-responsive'><table class='table table-striped table-dark'>";
       //loop for results
       for (x = 0; x < showTitle.length; x++) {
         //var for time and picking only time value
@@ -131,7 +131,7 @@ function showMovies() {
         //end table row
         out += "</tr>";
       }//end loop
-      out += "</table>";//end table
+      out += "</table></div>";//end table
     }//End If statement
     
     document.getElementById("Results").innerHTML = out;//put results(table) in document
